@@ -1,0 +1,81 @@
+{
+  // Editor
+  "editor.inlineSuggest.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.semanticHighlighting.enabled": true,
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "editor.rulers": [80],
+  "extensions.ignoreRecommendations": true,
+  // "editor.renderLineHighlight": "gutter",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "smooth",
+  // "editor.stickyScroll.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.wordWrap": "on",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#2C90CA",
+    // "titleBar.activeForeground": "#2C90CA"
+    // "activityBar.background": "#2C90CA"
+  },
+
+  // Workbench
+  "workbench.editor.labelFormat": "short",
+  "workbench.startupEditor": "none",
+  // "window.zoomLevel": -2,
+  "workbench.sideBar.location": "left",
+  "workbench.tree.indent": 21,
+
+  // Fonts
+  "editor.fontSize": 22,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  // "editor.lineHeight": 26,
+  // "editor.fontFamily": "Droid Sans Mono"
+
+  // Terminal
+  "terminal.integrated.fontSize": 17,
+
+  // Folders
+  "explorer.compactFolders": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+
+  // Files
+  "explorer.confirmDelete": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    // ".stylelintrc": "json",
+    // "*.tsx": "typescriptreact",
+    // ".env.*": "dotenv"
+  },
+
+  // Format
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "prettier.configPath": ".prettierrc.json",
+
+  // Javascript
+  // "typescript.tsserver.log": "off",
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+    // "typescript": "typescriptreact",
+    // "javascriptreact": "javascriptreact"
+    // "typescriptreact": "typescriptreact"
+  }
+}

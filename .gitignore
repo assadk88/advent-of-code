@@ -3,10 +3,6 @@ logs
 *.log
 npm-debug.log*
 
-# Compiled Output
-/dist
-/tmp
-
 # System Files
 .DS_*
 Thumbs.db
