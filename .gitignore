@@ -1,0 +1,19 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Compiled Output
+/dist
+/tmp
+
+# System Files
+.DS_*
+Thumbs.db
+
+# Dependency Directories
+node_modules/
+
+# Optional npm Cache Directory
+.npm
+.eslintcache
