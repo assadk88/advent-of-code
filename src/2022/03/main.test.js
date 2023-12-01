@@ -1,4 +1,4 @@
-import { format, part1, part2 } from './main';
+import { part1, part2 } from './main';
 import { input } from './input';
 
 describe('Day 3', () => {

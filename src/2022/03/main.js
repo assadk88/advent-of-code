@@ -1,7 +1,7 @@
-import { splitStringElementIntoTwoArrays } from '../utils/string/splitStringElementIntoTwoArrays';
-import { chunkArray } from '../utils/array/chunkArray';
-import { charCodeToAlphabetPosition } from '../utils/string/charCodeToAlphabetPosition';
-import { findStringIntersection } from '../utils/string/findStringIntersection';
+import { chunkArray } from '../../utils/array/chunkArray';
+import { charCodeToAlphabetPosition } from '../../utils/string/charCodeToAlphabetPosition';
+import { findStringIntersection } from '../../utils/string/findStringIntersection';
+import { splitStringElementIntoTwoArrays } from '../../utils/string/splitStringElementIntoTwoArrays';
 
 export const format = (data) => {
   return data.trim().split('\n');
@@ -11,18 +11,24 @@ export const part1 = (input) => {
   const data = format(input);
 
   return data
-    .map((x) => splitStringElementIntoTwoArrays(x))
+    .map((x) => {
+      return splitStringElementIntoTwoArrays(x);
+    })
     .map((array) => {
       let [SubArrayA, SubArrayB] = array;
       SubArrayA = [...new Set(SubArrayA)];
       SubArrayB = [...new Set(SubArrayB)];
-      return SubArrayB.filter((value) => SubArrayA.includes(value));
+      return SubArrayB.filter((value) => {
+        return SubArrayA.includes(value);
+      });
     })
     .flat()
     .map((y) => {
       return charCodeToAlphabetPosition(y);
     })
-    .reduce((i, a) => i + a);
+    .reduce((i, a) => {
+      return i + a;
+    });
 };
 
 export const part2 = (input) => {
@@ -36,5 +42,7 @@ export const part2 = (input) => {
     .map((y) => {
       return charCodeToAlphabetPosition(y);
     })
-    .reduce((i, a) => i + a);
+    .reduce((i, a) => {
+      return i + a;
+    });
 };

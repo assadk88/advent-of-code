@@ -4,10 +4,10 @@
 // Note: In the case of an odd number of characters in the string,
 // one subarray may be larger than the other
 
-export function splitStringElementIntoTwoArrays(stringElement) {
+export const splitStringElementIntoTwoArrays = function (stringElement) {
   const arrayElement = stringElement.split('');
   const medianIndex = arrayElement.length / 2;
   const subArrayA = arrayElement.slice(0, medianIndex);
   const subArrayB = arrayElement.slice(medianIndex);
   return [[...subArrayA], [...subArrayB]];
-}
+};

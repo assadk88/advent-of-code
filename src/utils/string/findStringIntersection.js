@@ -4,7 +4,7 @@
 // Returns: It returns the character common in all three strings
 // Note: This is essentially a crude set intersection operation for strings
 
-export function findStringIntersection(array) {
+export const findStringIntersection = function (array) {
   let [a, b, c] = array;
 
   a = a.split('');
@@ -18,4 +18,4 @@ export function findStringIntersection(array) {
     .filter((v) => {
       return c.includes(v);
     })[0];
-}
+};

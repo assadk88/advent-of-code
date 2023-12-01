@@ -2,6 +2,16 @@ export const format = (data) => {
   return data.trim().split('\n');
 };
 
+const replace = function (data, permutations) {
+  let str;
+  for (const [key, value] of permutations) {
+    if (data.match(key)) {
+      str = data.replace(key, value);
+    }
+  }
+  return str;
+};
+
 export const part1 = (input) => {
   const data = format(input);
 
@@ -17,20 +27,16 @@ export const part1 = (input) => {
     [/\bB\sZ\b/, 9]
   ]);
 
-  function replace(data) {
-    let str;
-    for (let [key, value] of PERMUTATIONS) {
-      if (data.match(key)) {
-        str = data.replace(key, value);
-      }
-    }
-    return str;
-  }
-
   return data
-    .map((x) => replace(x))
-    .map((y) => parseInt(y))
-    .reduce((acc, val) => acc + val);
+    .map((x) => {
+      return replace(x, PERMUTATIONS);
+    })
+    .map((y) => {
+      return parseInt(y);
+    })
+    .reduce((acc, val) => {
+      return acc + val;
+    });
 };
 
 export const part2 = (input) => {
@@ -48,18 +54,14 @@ export const part2 = (input) => {
     [/\bB\sZ\b/, 9]
   ]);
 
-  function replace(data) {
-    let str;
-    for (let [key, value] of PERMUTATIONS) {
-      if (data.match(key)) {
-        str = data.replace(key, value);
-      }
-    }
-    return str;
-  }
-
   return data
-    .map((x) => replace(x))
-    .map((y) => parseInt(y))
-    .reduce((acc, val) => acc + val);
+    .map((x) => {
+      return replace(x, PERMUTATIONS);
+    })
+    .map((y) => {
+      return parseInt(y);
+    })
+    .reduce((acc, val) => {
+      return acc + val;
+    });
 };

@@ -15,12 +15,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.wordWrap": "on",
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#2C90CA",
-    // "titleBar.activeForeground": "#2C90CA"
-    "activityBar.foreground": "#FFFFFF",
-    "activityBar.background": "#2C90CA"
-  },
 
   // Workbench
   "workbench.editor.labelFormat": "short",
@@ -59,6 +53,14 @@
     // "*.tsx": "typescriptreact",
     // ".env.*": "dotenv"
   },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+    // add other languages if needed
+  ],
 
   // Format
   "editor.formatOnSave": true,
