@@ -11,6 +11,8 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch",
+    "test:2023": "npm test -- --testPathPattern=/2023",
+    "test:2022": "npm test -- --testPathPattern=/2022",
     "lint": "eslint . --cache --ext .js",
     "lint:fix": "eslint . --cache --ext .js --fix"
   },
