@@ -82,17 +82,21 @@ export const part1 = (input) => {
 
 export const part2 = (input) => {
   const formattedInput = format(input);
+  formattedInput.map((line) => {
+    return numbers.slice(8);
+  });
   console.log(
-    formattedInput.map((line) => {
-      return numbers.map((number) => {
-        return line.includes(number) ? number : '';
-      });
-    })
-    // .map((line) => {
-    //   return line.filter((lineItem) => {
-    //     return lineItem !== '';
-    //   });
-    // })
+    formattedInput
+      .map((line) => {
+        return numbers.map((number) => {
+          return line.includes(number) ? number : '';
+        });
+      })
+      .map((line) => {
+        return line.filter((lineItem) => {
+          return lineItem;
+        });
+      })
     // .map((line) => {
     //   return parseInt(
     //     [

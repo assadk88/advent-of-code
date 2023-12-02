@@ -13,3 +13,6 @@ node_modules/
 # Optional npm Cache Directory
 .npm
 .eslintcache
+
+# Misc
+scratchpad.js
