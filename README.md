@@ -6,8 +6,6 @@ Welcome to my solutions for [Advent of Code](https://adventofcode.com/). These s
 
 1. **Clone the repository**
 
-   Use Git to clone the repository to your local machine:
-
    ```SHELL
    git clone git@github.com:assadk88/advent-of-code.git
    ```
@@ -24,30 +22,24 @@ Welcome to my solutions for [Advent of Code](https://adventofcode.com/). These s
    npm install
    ```
 
-4. **Running tests**
-
-   Verify that the setup is correct and nothing is broken:
-
-   ```
-   npm run test
-   ```
-
 ## Usage
 
-Challenges can be found in the `src/` directory. Where they are organised by year and then day in their own respective directories.
+Challenges can be found in the `src/` directory, where they are organised by year and then day.
 
-Challenges are structured so that the `main.js` program and its associated `input.js` are defined separately. These are both then imported into `main.test.js` where you can then perform a test to confirm that the program is returning the correct output.
+Challenges are structured so that the solution (`main.js`) and its associated input (`input.js`) are defined separately. These are both imported into `main.test.js`. You can then perform a test to verify that the program is producing the correct output.
 
-### Verifying solutions
+### Verifying solutions by year
 
-To perform the tests for a given year perform
+To execute the tests for a given year perform:
 
 ```SHELL
 # npm run test:<year>
 npm run test:2023
 ```
 
-To execute a specific test by file path perform:
+### Verifying solutions by specific challenge
+
+To execute the test associated with a specific challenge, you must specify its file path. For example to execute the test for the first challenge in 2023's Advent of Code you would perform:
 
 ```
 NODE_OPTIONS=--experimental-vm-modules npx jest test --runTestsByPath src/2023/01/main.test.js
